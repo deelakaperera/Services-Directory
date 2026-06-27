@@ -4,7 +4,7 @@ annotations:
   expirydate: "2024-06-30"
 destination:
   cluster: my-k8-demo
-  namespace: client-1-test
+  namespace: client-1-testind
   project: c-dev
 
 chart:
