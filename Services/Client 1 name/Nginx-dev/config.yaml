@@ -1,0 +1,19 @@
+# Arguments passed during helm install
+name: Client-1-nginx-dev
+annotations:
+  expirydate: "2024-06-30"
+destination:
+  cluster: my-k8-demo
+  namespace: client-1-dev
+  project: c-dev
+
+chart:
+  version: 1.0.0
+  name: client-1-nginx
+
+
+  # This will overwrite values in D:\Devops\reusable-helm-charts\nginx-ingress\values.yaml
+  values: |
+    key1:
+      foo: bar
+      sli: false
